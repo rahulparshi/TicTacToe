@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title></title>
+    <style media="screen">
+      .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        grid-gap: 2px;
+        padding: 10%;
+      }
+    .container  button
+      {
+        background-color: grey;
+        padding: 10%;
+      }
+    </style>
+    <!-- socket.io -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
+  </head>
+  <body>
+     <div class="container" id="container"> 
+      <button type="button" name="button" class="box" id="0"></button>
+      <button type="button" name="button" class="box" id="1"></button>
+      <button type="button" name="button" class="box" id="2"></button>
+      <button type="button" name="button" class="box" id="3"></button>
+      <button type="button" name="button" class="box" id="4"></button>
+      <button type="button" name="button" class="box" id="5"></button>
+      <button type="button" name="button" class="box" id="6"></button>
+      <button type="button" name="button" class="box" id="7"></button>
+      <button type="button" name="button" class="box" id="8"></button>
+      </div>
+  </body>
+  <script src="/test.js"></script>
+</html>
