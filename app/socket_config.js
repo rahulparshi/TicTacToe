@@ -5,10 +5,11 @@ var user_json={}
 
 
 socket.on('click', function(data){
+  console.log(data);
   $("#"+data._id).attr("style",("background-color:"+data.color));
   board_hash[data._id]=socket.id;
   checkGame(data._id,socket.id);
-$("button").attr("disabled","true");
+  $("button").attr("disabled","true");
 });
 
 socket.on('enable',function(){
