@@ -11,7 +11,7 @@ app.get('/', function(req, res) {
 });
 
 
-var server = app.listen(4000, function(){
+var server = app.listen(process.env.PORT ||4000, function(){
     console.log('listening for requests on port 4000,');
 });
 
